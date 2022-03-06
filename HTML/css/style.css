@@ -1,0 +1,359 @@
+*{
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Italianno', cursive;
+    font-family: 'Open Sans', sans-serif;
+    background-image: linear-gradient(to right, rgba(146, 254, 157, 0.452) 0%, rgba(0, 200, 255, 0.459) 100%);
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(120deg, rgba(48, 170, 170, 0.5) 0%, rgba(143, 210, 244, 0.5) 100%), url("../img/porta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.head{
+    padding: 0%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+}
+
+.burgermenu{
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menunavegacion{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /*transition: transform .3s ease-in-out;*/ 
+    transform: translate(110%);
+    box-shadow: rgba(0, 0, 0, .5);
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menunavegacion a{
+    color: white;
+    text-decoration: none;
+}
+
+.title{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/* estilos de contenedor pasteles o galeria */
+
+.subtitle{
+    text-align: center;
+    font-weight: 300;
+    color: #1b93b8;
+    margin-bottom: 40px;
+    font-size: 40px;
+
+}
+
+.gallery{
+    background-color: aquamarine;
+}
+
+.container-gallery{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.img-gallery{
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+/* Estilos del formulario */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html {
+  font-family: 'Montserrat', Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+button, input, select, textarea {
+  color: #5A5A5A;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#creaciones {
+  background-color: #9face62c;
+  border-radius: 10%;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+  padding: 37.5px;
+  margin: 50px 0;
+}
+
+.pform{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #327a91;
+}
+
+.inradio{
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3%;
+}
+
+.incheckbox{
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3%;
+}
+
+.underline {
+  border-bottom: solid 2px #474544;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  fill: #474544;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.email {
+	float: right;
+	width: 45%;
+}
+
+input[type='submit']{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    background-image: linear-gradient(to right, rgb(146, 254, 157) 0%, rgb(0, 200, 255) 100%);
+    color: azure;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+    padding: 3%;
+}
+
+input[type='text'], select, textarea {
+	background: none;
+  border: none;
+	border-bottom: solid 2px #474544;
+	color: #474544;
+	font-size: 1.000em;
+  font-weight: 400;
+  letter-spacing: 1px;
+	margin: 0em 0 1.875em 0;
+	padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+input[type='text']:focus, textarea:focus {
+	outline: none;
+	padding: 0 0 0.875em 0;
+}
+
+.message {
+	float: none;
+}
+
+.name {
+	float: left;
+	width: 45%;
+}
+
+select {
+  background: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png') no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+textarea {
+	line-height: 150%;
+	height: 150px;
+	resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+	color: #474544;
+}
+
+:-moz-placeholder { 
+	color: #474544;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: #474544;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	color: #474544;
+}
+
+/* Estilos del contenedor quienes somos */
+
+.container-quienesomos{
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Estilos del Footer*/
+
+footer{
+  background-color: #9face6b2;
+  padding: 0.1px;
+}
+
+.footer.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.contact-us{
+  width: 40%;
+  color: white;
+}
+
+.brand{
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.brand+p{
+  font-weight: 500;
+}
+
+.socia-media{
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-media-icon{
+  display: inline-block;
+  margin-left: 20px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+}
+
+.social-media-icon:hover{
+  background-color: white;
+  color: #9face6b2;
+}
+
+.social-media-icon i{
+  font-size: 30px;
+  line-height: 60px;
+}
+
+.line{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 60px;
+}

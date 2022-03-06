@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crearte Pastelería</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Open+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="inicio">
+        <img src="img/menuhamburguesa.svg" alt="" class="burgermenu">
+        <nav class="menunavegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#pasteles">Pasteles</a>
+            <a href="#creaciones">Crea tu pastel</a>
+            <a href="#quienessomos">¿Quiénes somos?</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="container head">
+            <h1 class="title">Tú lo imaginas, nosotros lo hacemos realidad</h1>
+        </div>
+        <div>
+            <img src="img/logo.jpg" alt="" style="border-radius: 50%;">
+        </div>
+    </header>
+    <main>
+        <section class="gallery, container" id="pasteles">
+            <h2 class="subtitle">Nuestras especialidades</h2>
+            <div class="container-gallery">
+                <img src="img/deva-williamson-rHz-DkDgA1k-unsplash.jpg" alt="" class="img-gallery">
+                <img src="img/jacob-thomas-6jHpcBPw7i8-unsplash.jpg" alt="" class="img-gallery">
+                <img src="img/katie-rosario-QNyRp21hb5I-unsplash.jpg" alt="" class="img-gallery">
+                <img src="img/natallia-nagorniak-tA3sJ4u09eU-unsplash.jpg" alt="" class="img-gallery">
+                <img src="img/slashio-photography-T5KPTbbK-_E-unsplash.jpg" alt="" class="img-gallery">
+                <img src="img/lindsay-cotter-9J7sHieVFi0-unsplash.jpg" alt="" class="img-gallery" >  
+            </div>
+        </section>
+    <!--<section class="img-light">
+        <img src="img/close.svg" alt="" class="close">
+        <img src="" alt="" class="agree-img">
+    </section> -->
+        <section class="creations, container" id="creaciones">
+            <h2 class="subtitle">Crea el pastel que deseas</h2>
+                <div class="forms">
+                    <form>
+                        <div>
+                            <p class="pform">Elige el sabor del pan</p>
+                                <div class="inradio">
+                                    <input type="radio" id="naranja" name="sabor-pan" value="naranja">
+                                    <label for="naranja">Naranja</label>
+                            
+                                    <input type="radio" id="vainilla" name="sabor-pan" value="vainilla">
+                                    <label for="vainilla">Vainilla</label>
+                            
+                                    <input type="radio" id="chocolate" name="sabor-pan" value="chocolate">
+                                    <label for="chocolate">Chocolate</label>
+                            
+                                    <input type="radio" id="napolitano" name="sabor-pan" value="napolitano">
+                                    <label for="napolitano">Napolitano</label>
+                                </div>
+                            <p class="pform">Elige un relleno o combinalos como tú quieras</p>
+                                <div class="incheckbox">
+                                    <input type="checkbox" id="relleno1" name="relleno1" value="Durazno">
+                                    <label for="relleno1">Durazno</label><br>
+                            
+                                    <input type="checkbox" id="relleno2" name="relleno2" value="Cajeta">
+                                    <label for="relleno2">Cajeta</label><br>
+                            
+                                    <input type="checkbox" id="relleno3" name="relleno3" value="Fresa">
+                                    <label for="relleno3">Fresa</label><br>
+                            
+                                    <input type="checkbox" id="relleno4" name="relleno4" value="Piña">
+                                    <label for="relleno4">Piña</label><br>
+                                </div>
+                            <p class="pform">Elige el betún</p>
+                                <div class="inradio">
+                                    <input type="radio" id="quesocrema" name="sabor-betun" value="quesocrema">
+                                    <label for="quesocrema">Queso crema</label>
+                            
+                                    <input type="radio" id="vainilla" name="sabor-betun" value="vainilla">
+                                    <label for="vainilla">Vainilla</label>
+                            
+                                    <input type="radio" id="chocolate" name="sabor-betun" value="chocolate">
+                                    <label for="chocolate">Chocolate</label>
+                            
+                                    <input type="radio" id="fresa" name="sabor-betun" value="fresa">
+                                    <label for="fresa">Napolitano</label>
+                                </div>
+                            <p class="pform">Datos personales</p>
+                                <input type="text" name="Nombre" id="nombre" placeholder="Ingresa tu nombre"><br>
+                                <input type="text" name="Direccion" id="direccion" placeholder="Ingresa tu dirección"><br>
+                            <p class="pform">Forma de pago</p>
+                                <input type="text" name="" id="numTarjeta" placeholder="Ingresa el número de tu tarjeta"><br>
+                                <input type="text" name="" id="fechaExp" placeholder="Ingresa la fecha de expiración"><br>
+                                <input type="text" name="" id="codSeguridad" placeholder="Ingresa el código de seguridad"><br>
+                            <input type="submit" value="Realizar pedido">
+                        </div>
+                    </form>
+                </div>
+        </section>
+        <section class="container" id="quienessomos">
+            <h2 class="subtitle">¿Quiénes somos?</h2>
+                <div class="container-quienesomos">
+                    <p>Crearte Pastelería es una empresa que nació en el año 2022 en la ciudad de Torreón Coahuila,  buscando lograr que nuestros clientes 
+                    encuentren la variedad de pasteles de acuerdo a sus antojos, puedan echar a volar su imaginacion y
+                    crearlos a su medida.
+                    </p>
+                </div>
+        </section>
+    </main>
+    <footer id="contacto">
+        <div class="container footer content">
+            <div class="contact-us">
+                <h2 class="brand">Crearte Pastelería</h2>
+                <p>Expertos en crear tus antojos</p>
+            </div>
+            <div class="social-media">
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-twitter' ></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-instagram-alt' ></i>
+                </a>
+            </div>
+        </div>
+        <div class="line"></div>
+    </footer>
+   
+    
+    <script src="javascript/menu.js"></script>
+    <script src="javascript/lightbox.js"></script>
+</body>
+</html>
